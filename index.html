@@ -1,56 +1,67 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clientes</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inicio de Sesión</title>
+  <style>
+      body {
+          font-family: Arial, sans-serif;
+          background-color: #f2f2f2;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100vh;
+          margin: 0;
+      }
+      
+      .login-container {
+          background-color: white;
+          padding: 40px;
+          border-radius: 5px;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+          text-align: center;
+          width: 300px;
+      }
+      
+      .login-container h2 {
+          margin-top: 0;
+      }
+      
+      .login-container input {
+          width: 100%;
+          padding: 12px 20px;
+          margin: 8px 0;
+          display: inline-block;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+          box-sizing: border-box;
+      }
+      
+      .login-container button {
+          background-color: #4CAF50;
+          color: white;
+          padding: 14px 20px;
+          margin: 8px 0;
+          border: none;
+          border-radius: 4px;
+          cursor: pointer;
+          width: 100%;
+      }
+      
+      .login-container button:hover {
+          background-color: #45a049;
+      }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>Clientes</h1>
-    </header>
-
-    <nav>
-        <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="productos.html">Productos</a></li>
-            <li><a href="compras.html">Compras</a></li>
-            <li><a href="proveedores.html">Proveedores</a></li>
-            <li><a href="factura.html">Factura</a></li>
-        </ul>
-    </nav>
-
-    <main>
-        <section>
-            <h2>Gestión de Clientes</h2>
-            <table>
-                <thead>
-                    <tr>
-                        <th>CI</th>
-                        <th>Nombre</th>
-                        <th>Apellido</th>
-                        <th>Teléfono</th>
-                        <th>Dirección</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <!-- Datos de ejemplo -->
-                    <tr>
-                        <td>911678422</td>
-                        <td>Joel</td>
-                        <td>Sancan</td>
-                        <td>9791165</td>
-                        <td>Coop. Sergio Toral</td>
-                    </tr>
-                </tbody>
-            </table>
-            <button>Añadir Cliente</button>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2025 Gestión de Tienda. Todos los derechos reservados.</p>
-    </footer>
+  <div class="login-container">
+      <h2>Inicio de Sesión</h2>
+      <form action="index.html" method="get">
+          <input type="text" placeholder="Usuario" required>
+          <input type="password" placeholder="Contraseña" required>
+          <button type="submit">Iniciar Sesión</button>
+      </form>
+  </div>
 </body>
 </html>
